@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .home-content{
+            text-align: justify;
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column; /* 가로 정렬 무효화 */
+            justify-content: flex-start; /* direction 방향으로 정렬 */
+            align-items: center; /* direction과 반대축 정렬 */
+        }
+
+        .home-content h2{
+            max-width: min(1100px, 70%);
+            margin-bottom: 10px;
+        }
+
+        .home-content p{
+            max-width: min(1100px, 70%);
+        }
+
+        .btn-login{
+            display: inline-block;   /* inline 속성에 상하여백을 적용하고 싶을때 */
+            background: linear-gradient(68deg, violet, blueviolet);
+            padding: 12px 28px;
+            border-radius: 1000px;
+            margin-top: 20px;
+            color: white;
+            transition: background 1s ease-in-out; /* gradient는 버그 있을 수 있음 */
+        }
+
+        a.btn-login:hover{
+            background: linear-gradient(68deg, fuchsia, indigo);
+        }
+    </style>
+</head>
+<body>
+    <!-- 네비게이션바 -->
+    <nav>
+        <div class="inner-box">
+            <div class="logo">
+                <a href="index.html">My Home</a>
+            </div>
+            <ul>
+                <li><a href="index.html"
+                    class="selected">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- 홈페이지 글이랑 버튼 -->
+    <div class="home-content">
+     <h2>제목</h2>
+     <p>감사해요</p>
+     <a href="#" class="btn-login">로그인</a>
+    </div>
+
+</body>
+</html>
